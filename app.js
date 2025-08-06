@@ -16,6 +16,11 @@ mongoose.connect(mongoURI)
 // เพิ่ม express.json() middleware
 app.use(express.json());
 
+// เพิ่ม endpoint หน้าแรก
+app.get('/', (req, res) => {
+    res.send('Welcome to the Book API!');
+});
+
 // GET /api/books: ดึงข้อมูลหนังสือทั้งหมด
 app.get('/api/books', async (req, res) => {
   try {
