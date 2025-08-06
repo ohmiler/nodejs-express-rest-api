@@ -1,0 +1,1 @@
+mongodb+srv://admin:<db_password>@cluster0.pglm3yf.mongodb.net/
